@@ -1,0 +1,191 @@
+/* Importações */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variáveis Globais */
+
+:root{
+    --primary-color: #0a1128;
+    --white-color: #f0f5f5;
+    --gray-color: #9c9c9c;
+    --gap: 3rem;
+}
+
+/* Classes*/
+.main-img{
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/confetti-doodles.svg');
+}
+
+.white-img{
+    background-size: cover;
+    background-position: center;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 7cqmin;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu{
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 0.01rem solid var(--gray-color);
+    z-index: 1;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color)
+}
+
+.menu h1 a{
+    color: inherit;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    color: inherit;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 25%;
+    width: 0;
+    height: 0.2rem;
+    background-color: #6c63ff;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+}
+
+.menu-spacing{
+    height: 6rem;
+}
+
+/* Classes da seção de introdução */
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    gap: 10rem;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2{
+    font-size: 5.5rem;
+    margin-bottom: var(--gap);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content{
+    max-width: 75rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top3-content h2{
+    margin-bottom: var(--gap);
+}
+
+/* Estilização Geral*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 5.5rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 4.5rem;
+}
+
+h5{
+    font-size: 4rem;
+}
+
+h6{
+    font-size: 4.5rem;
+}
+
+p{
+    margin-bottom: var(--gap);
+}
+
+a{
+    text-decoration: none;
+}
