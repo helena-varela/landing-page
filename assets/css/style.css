@@ -30,7 +30,7 @@
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    height: 7cqmin;
+    padding: 8rem var(--gap);
 }
 
 .section{
@@ -44,7 +44,7 @@
     right: 0;
     left: 0;
     width: 100%;
-    border-bottom: 0.01rem solid var(--gray-color);
+    border-bottom: 0.09rem solid var(--gray-color);
     z-index: 1;
 }
 
@@ -52,6 +52,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .menu ul{
@@ -93,16 +95,18 @@
 }
 
 .menu-spacing{
-    height: 6rem;
+    min-height: 6rem;
 }
 
 /* Classes da seção de introdução */
 
 .intro-content{
     display: grid;
+    top: -8rem;
+    position: relative;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    gap: 10rem;
+    min-height: 100vh;
+    gap: var(--gap);
 }
 
 .intro-text-content, .intro-img{
@@ -118,16 +122,16 @@
     font-weight: 800;
 }
 
-.intro-img img{
+.intro-img img, .intro-img svg{
     max-width: 100%;
     height: auto;
 }
 
 .top3-content{
     max-width: 75rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -140,10 +144,10 @@
 /* Classes de Learning */
 .grid-one-content{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
     counter-reset: grid-counter;
+    min-height: 100vh;
 }
 
 .grid-main-heading{
