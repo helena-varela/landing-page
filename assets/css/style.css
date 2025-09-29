@@ -260,3 +260,31 @@ p{
 a{
     text-decoration: none;
 }
+
+table{
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    padding: 1.2rem;
+    text-align: left;
+    border: 0.1rem solid var(--gray-color);
+}
+
+table th{
+    background-color: #d4d3d3;
+}
+
+table caption{
+    text-align: left;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.responsive-table{
+    overflow-x: auto;
+    overflow: hidden;
+}
