@@ -18,7 +18,7 @@
     background-size: cover;
     background-position: center;
     color: var(--white-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/confetti-doodles.svg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/confetti-doodles.svg');
 }
 
 .white-img{
@@ -208,10 +208,92 @@
     margin-bottom: 3rem;
 }
 
+/* Classes contact */
+.contact-form{
+    grid-column:span 2;
+}
+
+.form-grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 3rem;
+    border-radius: 5px;
+
+}
+
+.flex-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group{
+    flex: 1 1 auto 320px;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-group button{
+    border: 0.2rem solid var(--white-color);
+    border-radius: 5px;
+    background: none;
+    color: var(--white-color);
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 360ms ease-in-out;
+    font-weight: 500;
+    width: 14rem;
+}
+
+.form-group button:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.form-group label{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+.form-group::placeholder{
+    color: var(--gray-color);
+}
+
+#contact h2{
+    margin-top: 6rem;
+    font-size: 5rem;
+}
+
+#contact p{
+    font-weight: 600;
+}
+
 /* Estilização Geral*/
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -287,4 +369,26 @@ table caption{
 .responsive-table{
     overflow-x: auto;
     overflow: hidden;
+}
+
+.full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+textarea{
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer a{
+    color: lightcoral;
+}
+
+.footer p{
+    margin: 0;
+    padding: 5rem;
 }
