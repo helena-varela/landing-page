@@ -124,7 +124,7 @@
 }
 
 .intro-img img, .intro-img svg{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -187,6 +187,13 @@
 }
 
 /* Classes Gallery */
+.grid-two{
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+    gap: var(--gap);
+    grid-auto-rows: 360px;
+}
+
 .grid-img{
     transition: all 360ms ease-in-out;
     overflow: hidden;
@@ -368,7 +375,7 @@ table caption{
 
 .responsive-table{
     overflow-x: auto;
-    overflow: hidden;
+    width: 100%;
 }
 
 .full-width{
@@ -412,7 +419,7 @@ textarea{
     border: var(--primary-color) solid 1px;
 }
 
-@media (max-width:900px){
+@media (max-width:1040px){
 
     .intro-content{
         grid-template-columns: 1fr;
@@ -432,20 +439,25 @@ textarea{
     .grid{
         text-align: center;
         display: block;
+    }
 
+    .grid-two{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
     }
 
     .form-grid{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--gap);
-    padding: 3rem;
-    border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        padding: 3rem;
+        border-radius: 5px;
     }
 
     .flex-input{
-    display: block;
+        display: block;
+        width: 100%;
     }
 
     .menu{
@@ -498,4 +510,12 @@ textarea{
         display: none;
     }
 
+}
+
+@media (max-width: 689px){
+
+    .grid-two{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
